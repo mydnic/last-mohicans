@@ -43225,7 +43225,7 @@ if (inBrowser && window.Vue) {
 "use strict";
 var routes = [
 // Home
-{ path: '/', name: 'home', component: __webpack_require__(41) },
+{ path: '/', name: 'home', component: __webpack_require__(41) }, { path: '/games', name: 'games', component: __webpack_require__(55) },
 
 // 404
 { path: '*', redirect: { name: 'home' } }];
@@ -43558,52 +43558,57 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "has-text-centered" }, [
-    _c("h1", { staticClass: "title is-1 has-text-white is-spaced" }, [
-      _vm._v("\n            Last-Mohicans Team\n        ")
-    ]),
-    _vm._v(" "),
-    _c("h1", { staticClass: "subtitle is-3 has-text-white" }, [
-      _vm._v("\n            Nous rejoindre sur\n        ")
-    ]),
-    _vm._v(" "),
-    _c("div", { staticClass: "columns is-centered is-vcentered" }, [
-      _c(
-        "div",
-        { staticClass: "column is-3" },
-        [
-          _c("img", {
-            attrs: { src: "/img/Discord-logo.png", alt: "Discord" }
-          }),
-          _vm._v(" "),
-          _c("discord-link")
-        ],
-        1
-      ),
+  return _c(
+    "div",
+    { staticClass: "has-text-centered home" },
+    [
+      _c("h1", { staticClass: "title is-1 has-text-white is-spaced" }, [
+        _vm._v("\n        Last-Mohicans Team\n    ")
+      ]),
+      _vm._v(" "),
+      _c("h1", { staticClass: "subtitle is-3 has-text-white" }, [
+        _vm._v("\n        Nous rejoindre sur\n    ")
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "columns is-centered is-vcentered" }, [
+        _c(
+          "div",
+          { staticClass: "column is-3" },
+          [
+            _c("img", {
+              attrs: { src: "/img/Discord-logo.png", alt: "Discord" }
+            }),
+            _vm._v(" "),
+            _c("discord-link")
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "column is-3 is-offset-3" },
+          [
+            _c("img", {
+              attrs: { src: "/img/teamspeak_small.png", alt: "Teamspeak" }
+            }),
+            _vm._v(" "),
+            _c("teamspeak-link")
+          ],
+          1
+        )
+      ]),
       _vm._v(" "),
       _c(
-        "div",
-        { staticClass: "column is-3 is-offset-3" },
-        [
-          _c("img", {
-            attrs: { src: "/img/teamspeak_small.png", alt: "Teamspeak" }
-          }),
-          _vm._v(" "),
-          _c("teamspeak-link")
-        ],
-        1
+        "router-link",
+        {
+          staticClass: "button is-primary is-large cta is-outlined",
+          attrs: { to: "/games" }
+        },
+        [_vm._v("Nos Jeux")]
       )
-    ]),
-    _vm._v(" "),
-    _c(
-      "a",
-      {
-        staticClass: "button is-primary is-large cta",
-        attrs: { href: "#our-games" }
-      },
-      [_vm._v("Nos Jeux")]
-    )
-  ])
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -43620,6 +43625,160 @@ if (false) {
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(3)
+/* script */
+var __vue_script__ = __webpack_require__(56)
+/* template */
+var __vue_template__ = __webpack_require__(57)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/views/Games.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-5359ff04", Component.options)
+  } else {
+    hotAPI.reload("data-v-5359ff04", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 56 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    components: {
+        'discord-link': __webpack_require__(43),
+        'teamspeak-link': __webpack_require__(46)
+    }
+});
+
+/***/ }),
+/* 57 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "games" }, [
+      _c(
+        "h1",
+        { staticClass: "subtitle is-3 has-text-white has-text-centered" },
+        [
+          _vm._v(
+            "\n        Nous jouons à de nombreux jeux différents mais voici les principaux du moment\n    "
+          )
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "columns has-text-centered" }, [
+        _c("div", { staticClass: "column" }, [
+          _c("img", {
+            attrs: { src: "/img/games/tarkov_logo.png", alt: "Tarkov" }
+          }),
+          _vm._v(" "),
+          _c("h2", { staticClass: "title is-4 has-text-white" }, [
+            _vm._v("On recrute!")
+          ]),
+          _vm._v(" "),
+          _c("p", { staticClass: "has-text-white" }, [
+            _vm._v(
+              "\n                Rejoignez notre serveur Discord et contactez "
+            ),
+            _c("span", { staticClass: "has-text-primary" }, [_vm._v("Sefyu")])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "column" }, [
+          _c("div", { staticClass: "box is-radiusless" }, [
+            _c("img", {
+              attrs: {
+                src: "/img/games/r6s_logo.png",
+                alt: "Rainbow Six Siege"
+              }
+            })
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-5359ff04", module.exports)
+  }
+}
 
 /***/ })
 /******/ ]);

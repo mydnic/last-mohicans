@@ -11521,6 +11521,10 @@ label.panel-block:hover {
   margin-left: 10px;
 }
 
+.home .button.cta {
+  margin-top: 100px;
+}
+
 .background {
   background-image: url(https://images.unsplash.com/photo-1498736297812-3a08021f206f);
   background-size: cover;
