@@ -1,3 +1,3 @@
 export default {
-    discordLink: 'https://discord.gg/8sNtaaZ'
+    discordLink: 'https://discord.gg/krHUZJu'
 }
