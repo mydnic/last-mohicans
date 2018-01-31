@@ -484,7 +484,15 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 3 */,
+/* 3 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ __webpack_exports__["a"] = ({
+    discordLink: 'https://discord.gg/8sNtaaZ'
+});
+
+/***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
@@ -43408,10 +43416,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
-        'discord-link': __webpack_require__(201)
+        'discord-link': __webpack_require__(201),
+        'teamspeak-link': __webpack_require__(204)
     }
 });
 
@@ -43437,7 +43461,43 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_c("discord-link")], 1)
+  return _c("div", { staticClass: "has-text-centered" }, [
+    _c("h1", { staticClass: "title is-1 has-text-white is-spaced" }, [
+      _vm._v("\n        Last-Mohicans Team\n    ")
+    ]),
+    _vm._v(" "),
+    _c("h1", { staticClass: "subtitle is-3 has-text-white" }, [
+      _vm._v("\n        Nous rejoindre sur\n    ")
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "columns is-centered is-vcentered" }, [
+      _c(
+        "div",
+        { staticClass: "column is-3" },
+        [
+          _c("img", {
+            attrs: { src: "/img/Discord-logo.png", alt: "Discord" }
+          }),
+          _vm._v(" "),
+          _c("discord-link")
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        { staticClass: "column is-3 is-offset-3" },
+        [
+          _c("img", {
+            attrs: { src: "/img/teamspeak_small.png", alt: "Teamspeak" }
+          }),
+          _vm._v(" "),
+          _c("teamspeak-link")
+        ],
+        1
+      )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -43528,6 +43588,12 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
+//
+//
+//
+//
+//
 //
 //
 //
@@ -43535,7 +43601,18 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 
-/* harmony default export */ __webpack_exports__["default"] = ({});
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    mounted: function mounted() {
+        this.link = __WEBPACK_IMPORTED_MODULE_0__config__["a" /* default */].discordLink;
+    },
+    data: function data() {
+        return {
+            link: null
+        };
+    }
+});
 
 /***/ }),
 /* 203 */
@@ -43545,15 +43622,148 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div")
+  return _c("div", { staticClass: "has-text-white" }, [
+    _c(
+      "a",
+      {
+        staticClass: "button is-light",
+        attrs: { href: _vm.link, target: "_blank" }
+      },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _c("span", { domProps: { textContent: _vm._s(_vm.link) } })
+      ]
+    )
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "icon is-small" }, [
+      _c("i", { staticClass: "zmdi zmdi-link" })
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
     require("vue-hot-reload-api")      .rerender("data-v-5f99bbfc", module.exports)
+  }
+}
+
+/***/ }),
+/* 204 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+var normalizeComponent = __webpack_require__(2)
+/* script */
+var __vue_script__ = __webpack_require__(205)
+/* template */
+var __vue_template__ = __webpack_require__(206)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = null
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/components/teamspeak/TeamspeakLink.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-00147bce", Component.options)
+  } else {
+    hotAPI.reload("data-v-00147bce", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+/* 205 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__config__ = __webpack_require__(3);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            link: 'ts3server://last-mohicans.net'
+        };
+    }
+});
+
+/***/ }),
+/* 206 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "has-text-white" }, [
+    _c("a", { staticClass: "button is-light", attrs: { href: _vm.link } }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("span", [_vm._v("last-mohicans.net")])
+    ])
+  ])
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "icon is-small" }, [
+      _c("i", { staticClass: "zmdi zmdi-open-in-new" })
+    ])
+  }
+]
+render._withStripped = true
+module.exports = { render: render, staticRenderFns: staticRenderFns }
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+    require("vue-hot-reload-api")      .rerender("data-v-00147bce", module.exports)
   }
 }
 

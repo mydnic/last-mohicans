@@ -9,3 +9,30 @@
 // Components
 
 // Layout
+.background {
+    background-image: url(https://images.unsplash.com/photo-1498736297812-3a08021f206f);
+    background-size: cover;
+    background-position: center;
+    section.hero {
+        background-color: rgba(black, .8);
+        height: 100%;
+    }
+}
+footer.footer {
+    $gradient-top-left: darken(saturate(adjust-hue(black, -10deg), 10%), 10%);
+    $gradient-bottom-right: lighten(saturate(adjust-hue(black, 10deg), 5%), 5%);
+    background-image:  url(/img/curl.png), linear-gradient(141deg, $gradient-top-left 0%, black 30%, $gradient-bottom-right 100%);
+    background-color: transparent;
+
+    background-repeat: no-repeat;
+    background-size: 300px auto, auto;
+    background-position: -25px 57px, 0 0px;
+
+    color: $light;
+    strong {
+        color: $light;
+    }
+    a {
+        color: $primary
+    }
+}

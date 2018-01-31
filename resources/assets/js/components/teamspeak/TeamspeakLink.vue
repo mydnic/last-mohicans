@@ -1,10 +1,10 @@
 <template>
     <div class="has-text-white">
-        <a :href="link" target="_blank" class="button is-light">
+        <a :href="link" class="button is-light">
             <span class="icon is-small">
-                <i class="zmdi zmdi-link"></i>
+                <i class="zmdi zmdi-open-in-new"></i>
             </span>
-            <span v-text="link"></span>
+            <span>last-mohicans.net</span>
         </a>
     </div>
 </template>
@@ -13,12 +13,9 @@
 import Config from '../../config';
 
 export default {
-    mounted() {
-        this.link = Config.discordLink;
-    },
     data () {
         return {
-            link: null
+            link: 'ts3server://last-mohicans.net'
         }
     }
 }
