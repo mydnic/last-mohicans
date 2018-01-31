@@ -1,0 +1,12 @@
+.navbar-brand {
+    .navbar-item:hover {
+        background-color: transparent;
+    }
+    img.logo-text {
+        margin-left: 20px;
+        transition: margin-left 0.5s;
+        &:hover {
+            margin-left: 10px;
+        }
+    }
+}

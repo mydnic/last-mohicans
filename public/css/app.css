@@ -11507,6 +11507,20 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 6rem;
 }
 
+.navbar-brand .navbar-item:hover {
+  background-color: transparent;
+}
+
+.navbar-brand img.logo-text {
+  margin-left: 20px;
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+}
+
+.navbar-brand img.logo-text:hover {
+  margin-left: 10px;
+}
+
 .background {
   background-image: url(https://images.unsplash.com/photo-1498736297812-3a08021f206f);
   background-size: cover;
