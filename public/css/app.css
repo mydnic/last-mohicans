@@ -11517,7 +11517,7 @@ label.panel-block:hover {
   transition: margin-left 0.5s;
 }
 
-.navbar-brand img.logo-text:hover {
+.navbar-brand:hover img.logo-text {
   margin-left: 10px;
 }
 
