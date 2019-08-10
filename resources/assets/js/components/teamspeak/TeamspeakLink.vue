@@ -10,8 +10,6 @@
 </template>
 
 <script>
-import Config from '../../config';
-
 export default {
     data () {
         return {

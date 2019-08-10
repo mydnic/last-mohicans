@@ -23,8 +23,8 @@
 <script>
 export default {
     components: {
-        'discord-link': require('../components/discord/DiscordLink'),
-        'teamspeak-link': require('../components/teamspeak/TeamspeakLink'),
+        'discord-link': require('../components/discord/DiscordLink').default,
+        'teamspeak-link': require('../components/teamspeak/TeamspeakLink').default,
     }
 }
 </script>

@@ -1895,7 +1895,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../config */ "./resources/assets/js/config.js");
 //
 //
 //
@@ -1907,7 +1906,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1951,8 +1949,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    'discord-link': __webpack_require__(/*! ../components/discord/DiscordLink */ "./resources/assets/js/components/discord/DiscordLink.vue"),
-    'teamspeak-link': __webpack_require__(/*! ../components/teamspeak/TeamspeakLink */ "./resources/assets/js/components/teamspeak/TeamspeakLink.vue")
+    'discord-link': __webpack_require__(/*! ../components/discord/DiscordLink */ "./resources/assets/js/components/discord/DiscordLink.vue")["default"],
+    'teamspeak-link': __webpack_require__(/*! ../components/teamspeak/TeamspeakLink */ "./resources/assets/js/components/teamspeak/TeamspeakLink.vue")["default"]
   }
 });
 
@@ -1991,8 +1989,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    'discord-link': __webpack_require__(/*! ../components/discord/DiscordLink */ "./resources/assets/js/components/discord/DiscordLink.vue"),
-    'teamspeak-link': __webpack_require__(/*! ../components/teamspeak/TeamspeakLink */ "./resources/assets/js/components/teamspeak/TeamspeakLink.vue")
+    'discord-link': __webpack_require__(/*! ../components/discord/DiscordLink */ "./resources/assets/js/components/discord/DiscordLink.vue")["default"],
+    'teamspeak-link': __webpack_require__(/*! ../components/teamspeak/TeamspeakLink */ "./resources/assets/js/components/teamspeak/TeamspeakLink.vue")["default"]
   }
 });
 
@@ -45612,11 +45610,11 @@ var routes = [// Home
 {
   path: '/',
   name: 'home',
-  component: __webpack_require__(/*! ./views/Home */ "./resources/assets/js/views/Home.vue")
+  component: __webpack_require__(/*! ./views/Home */ "./resources/assets/js/views/Home.vue")["default"]
 }, {
   path: '/games',
   name: 'games',
-  component: __webpack_require__(/*! ./views/Games */ "./resources/assets/js/views/Games.vue")
+  component: __webpack_require__(/*! ./views/Games */ "./resources/assets/js/views/Games.vue")["default"]
 }, // 404
 {
   path: '*',
